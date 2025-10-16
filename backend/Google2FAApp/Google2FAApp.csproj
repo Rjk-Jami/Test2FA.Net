@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- For Google Authenticator TOTP -->
+    <PackageReference Include="Otp.NET" Version="1.4.0" />
+
+    <!-- For generating QR codes -->
+    <PackageReference Include="QRCoder" Version="1.7.0" />
+
+    <!-- Needed for converting QR code to image -->
+    <PackageReference Include="System.Drawing.Common" Version="9.0.10" />
+  </ItemGroup>
+
+</Project>

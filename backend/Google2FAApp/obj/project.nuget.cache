@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "1LLqpVQbRXE=",
+  "success": true,
+  "projectFilePath": "D:\\comeBack\\office practice\\test2FA.Net\\backend\\Google2FAApp\\Google2FAApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\strid\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.10\\microsoft.win32.systemevents.9.0.10.nupkg.sha512",
+    "C:\\Users\\strid\\.nuget\\packages\\otp.net\\1.4.0\\otp.net.1.4.0.nupkg.sha512",
+    "C:\\Users\\strid\\.nuget\\packages\\qrcoder\\1.7.0\\qrcoder.1.7.0.nupkg.sha512",
+    "C:\\Users\\strid\\.nuget\\packages\\system.drawing.common\\9.0.10\\system.drawing.common.9.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,13 @@
+@{
+    ViewBag.Title = "Home";
+}
+
+<h2>Welcome @ViewBag.Email</h2>
+
+<p>
+    <a href="/Account/Enable2FA">Enable 2FA</a>
+</p>
+
+<form method="post" action="/Account/Disable2FA">
+    <button type="submit">Disable 2FA</button>
+</form>
