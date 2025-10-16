@@ -1,0 +1,18 @@
+@{
+    ViewBag.Title = "Verify OTP";
+}
+
+<h2>Enter OTP</h2>
+
+@if(ViewBag.Error != null)
+{
+    <p style="color:red">@ViewBag.Error</p>
+}
+
+<form method="post" action="/Account/VerifyLoginOtp">
+    <div>
+        <label>6-digit OTP:</label>
+        <input name="otp" placeholder="Enter OTP" required />
+    </div>
+    <button type="submit">Verify</button>
+</form>

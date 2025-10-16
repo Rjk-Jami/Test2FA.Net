@@ -1,0 +1,21 @@
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+
+<form method="post">
+    <div>
+        <label>Email:</label>
+        <input name="email" placeholder="Email" required />
+    </div>
+    <div>
+        <label>Password:</label>
+        <input name="password" placeholder="Password" type="password" required />
+    </div>
+    <button type="submit">Register</button>
+</form>
+
+<p>
+    Already have an account? <a href="/Account/Login">Login</a>
+</p>

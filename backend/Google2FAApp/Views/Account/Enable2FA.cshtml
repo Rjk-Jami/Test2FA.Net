@@ -1,0 +1,27 @@
+@{
+    ViewBag.Title = "Enable 2FA";
+}
+
+<h2>Enable Google Authenticator</h2>
+
+<p>Scan this QR code in your Google Authenticator app:</p>
+
+@if(ViewBag.QrCodeImage != null)
+{
+    <img src="data:image/png;base64,@ViewBag.QrCodeImage" />
+}
+
+<p>Or manually enter key: <b>@ViewBag.SecretKey</b></p>
+
+@if(ViewBag.Error != null)
+{
+    <p style="color:red">@ViewBag.Error</p>
+}
+
+<form method="post" action="/Account/Verify2FA">
+    <div>
+        <label>Enter 6-digit code:</label>
+        <input name="otp" placeholder="OTP code" required />
+    </div>
+    <button type="submit">Verify</button>
+</form>
